@@ -1,0 +1,24 @@
+name: Test Maildrop
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    report-creation:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Intialize NPM
+          uses: actions/checkout@v4
+
+        - name: Run Cypress
+          uses: cypress-io/github-action@v6
+
+        - name: Archive files
+          uses: actions/upload-artifact@v2
+          with:
+            name: my-artifact
+            path: |
+              cypress/reports/

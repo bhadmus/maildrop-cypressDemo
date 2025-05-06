@@ -1,0 +1,25 @@
+{
+  "basicDetailsPage": {
+    "fullnameField": "#fullname",
+    "bizNameField": "#businessname",
+    "bizEmailField": "[name='businessemail']",
+    "bizPhoneNum": "#businessphonenumber",
+    "bizRegNum": "#businessRegNum",
+    "nextBtn": "button[type='button']"
+  },
+"otherDetailsPage":{
+  "WebField": "#website",
+  "InsField": "#instagramHandle",
+  "TwtField": "#twitterHandle",
+  "heardAboutUs": "div[placeholder]",
+  "InsOption": "div#scrollableDiv > div:nth-of-type(3)",
+  "FbOption": "div#scrollableDiv > div:nth-of-type(4)",
+  "TwiOption": "div#scrollableDiv > div:nth-of-type(5)",
+  "passwordField": "input#password",
+  "emailField": "#email"
+},
+"otpPage":{
+  "inputBox": "input",
+  "otpMessage": ".Onboarding_text__center__FzKte"
+}
+}
