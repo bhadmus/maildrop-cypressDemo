@@ -1,1 +1,4 @@
-![maildrop](maildrop.png) ![cypress](cypress-icon.jpeg)
+<p align="justify">
+    <img src="./maildrop.png"/>
+    <img src="./cypress-icon.jpeg"/>
+</p>
