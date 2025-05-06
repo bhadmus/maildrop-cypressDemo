@@ -4,6 +4,7 @@
 </p>
 <h1 align="center"><i> Using Maildrop to extract OTP using Cypress </i></h1>
 
+
 - [ ] [Maildrop](#maildrop)
 - [ ] [Cypress](#cypress)
 - [ ] [Documentation](#documentation)
