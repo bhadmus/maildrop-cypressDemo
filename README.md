@@ -1,1 +1,1 @@
-![maildrop](maildrop.png=350x250) ![cypress](cypress-icon.jpeg=350x250)
+![maildrop](maildrop.png) ![cypress](cypress-icon.jpeg)
