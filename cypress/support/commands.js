@@ -18,7 +18,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
+import { JSDOM } from 'jsdom'
 Cypress.Commands.add("retrieveOTP", (emailID) => {
   cy.wait(20000);
   cy.request({
@@ -52,9 +52,13 @@ Cypress.Commands.add("retrieveOTP", (emailID) => {
       .then((resp) => {
         const emailBody = resp.body.data.message.html;
         cy.log(emailBody);
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(emailBody, "text/html");
-        const code = doc.querySelector(
+        // const parser = new DOMParser();
+        // const doc = parser.parseFromString(emailBody, "text/html");
+        // const code = doc.querySelector(
+        //   "tr:nth-of-type(2) > td > table td > p:nth-of-type(3)"
+        // ).textContent;
+        const doc = new JSDOM(emailBody)
+        const code = doc.window.document.querySelector(
           "tr:nth-of-type(2) > td > table td > p:nth-of-type(3)"
         ).textContent;
         const otp = code.trim();

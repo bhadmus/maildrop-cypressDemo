@@ -10,6 +10,7 @@
     "@faker-js/faker": "^9.7.0",
     "cypress": "latest",
     "cypress-fill-command": "^1.0.2",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "jsdom": "^26.1.0"
   }
 }

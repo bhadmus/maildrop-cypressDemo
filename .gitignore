@@ -6,3 +6,4 @@ dist/
 cypress/scrennshots/
 cypress/videos/
 cypress/reports/
+cypress/fixtures/creds.json

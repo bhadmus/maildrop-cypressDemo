@@ -22,7 +22,7 @@ describe('Sign Up Journey', () => {
   it('A successful sign up with all fields filled', () => {
     cy.contains('Sign up').should('be.visible').click()
     cy.get(basic.fullnameField).should('be.visible').fill(faker.person.fullName())
-    cy.get(basic.bizNameField).fill(faker.company.buzzNoun())
+    cy.get(basic.bizNameField).fill(faker.person.middleName())
     cy.get(basic.bizEmailField).fill(details.email)
     cy.get(basic.bizPhoneNum).fill(faker.phone.number({style:'international'}))
     cy.get(basic.bizRegNum).fill('RC-0987')
