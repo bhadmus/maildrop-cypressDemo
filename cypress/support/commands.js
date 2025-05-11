@@ -24,7 +24,6 @@ Cypress.Commands.add("retrieveOTP", (emailID) => {
   cy.request({
     method: "POST",
     url: "https://api.maildrop.cc/graphql",
-    timeout: 60000,
     headers: {
       "Content-Type": "application/json",
     },
@@ -40,7 +39,6 @@ Cypress.Commands.add("retrieveOTP", (emailID) => {
       .request({
         method: "POST",
         url: "https://api.maildrop.cc/graphql",
-        timeout: 60000,
         headers: {
           "Content-Type": "application/json",
         },
